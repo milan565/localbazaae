@@ -1,0 +1,29 @@
+.pagesection_wrapper{
+    background-color: #f5f5f5;
+  
+}
+.homeproducttitle{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.7);
+}
+.homepagetitlespan{
+    /* position: relative; */
+    border-bottom: 3px solid #1362e3;
+    border-radius: 1%;
+}
+@media(max-width:767px){
+    .homeproducttitle{
+        font-size: 1.2rem;
+    }
+    .pagesection_wrapper{
+        border-top: 2px solid rgba(0,0,255,0.2);
+    }
+        
+}
+@media(max-width:576px){
+    .homeproducttitle{
+        font-size: 1.1rem;
+    }
+        
+}

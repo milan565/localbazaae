@@ -1,0 +1,11 @@
+.bannersection{
+    height: 300px;
+    width: 100%;
+    border: 2px solid red;
+}
+/* responsive styling of banner section */
+@media(max-width:767px){
+    .bannersection{
+        height: 200px;
+    }
+}

@@ -1,0 +1,215 @@
+
+@media(min-width:992px){
+    .container{
+        max-width: 1440px;
+        margin: auto;
+   }
+}
+
+@media(min-width:768px) {
+    .container{
+       max-width:95% ;
+        
+    }
+    
+}
+@media(max-width:768px) {
+    .container{
+        padding-left: 0;
+       padding-right: 0; 
+        
+    }
+    .col,.col-6,.col-12{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+}
+@media(min-width:576px) {
+    .container{
+       max-width:95% ;
+    
+    }
+    
+    
+}
+
+/* ************** top header section started ******* */
+@media(max-width:768px) {
+    .icon{
+        font-size: 0.9rem;
+    } 
+    .thlink{
+        padding: 2px 5px 2px 2px;  
+    } 
+    .thrfristlink{
+    
+        padding-right: 5px;
+    } 
+}
+
+/* ****************** midheader section ************ */
+@media(max-width:1199px){
+    .logosection h1{
+        font-size: 1.5rem;
+    } 
+    .accounticon{
+        font-size: 1.2rem;
+    }
+    .cartcount{
+        height: 18px;
+         width: 18px; 
+         top: -8px;
+    }
+  
+}
+@media(max-width:992px){
+     
+    .logoupper{
+        font-size: 1.7rem;
+    }  
+    .logosection h1{
+        font-size: 1.3rem;   
+    }
+}
+@media(max-width:768px){
+   
+    .midheadersection{
+       height: 60px;
+    }
+    .logosection h1{
+        font-size: 1rem;
+    }
+    .logoupper{
+        font-size: 1.3rem;
+        color: #ff0000;
+        font-style: italic;
+        font-weight: 700;
+    } 
+    .accounticon{
+        font-size: 1rem;
+    }
+    .cartcount{
+        height: 18px;
+         width: 18px; 
+         top: -8px;
+    }
+    .cartcount{
+        height: 15px;
+         width: 15px; 
+         top: -3px;
+         right: -10px;
+         font-size: 0.5rem;
+    }
+  
+}
+@media(max-width:576px){
+    .midheadersection{
+        /* border: 1px solid red; */
+        height: 100px;
+      }
+      .logosection{
+        display: flex;
+        justify-content: center;
+    }
+    .logosection h1{
+        font-size: 1.5rem;
+    }
+    .logoupper{
+        font-size: 1.7rem;
+    }
+    .searchsection{
+        padding: 0px 10px;
+    }
+    .cardsection{
+        padding: 0px 10px;
+    }
+}
+
+/* ************ menu section start ******** */
+@media(max-width:992px){
+    .navitem{
+        font-size: 0.85rem;
+        letter-spacing: 0px;
+    }   
+}
+@media(max-width:768px){
+    .menusection{
+        background-color: rgba(243,245,246,1);
+    }
+    .hambergunmenu{
+        display: block;
+        margin: 0px 0px 0px 15px;
+        
+    } 
+    .hambericon{
+        font-size: 1.3rem;
+        font-weight: bold;
+        color: rgba(0, 0, 0, 0.8);
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
+    } 
+    .hambericon:hover{
+        color: blue;
+        transition: all 0.3s ease-in-out;
+    } 
+    .menusection{
+        /* display: none; */
+        height: 50vh;
+        /* display: flex; */
+        justify-content: flex-start;
+        flex-direction: column;
+        z-index: 9999;
+        position: absolute;
+        width: 100%;
+        top: 0px;
+        box-shadow: 0px 0px 15px -5px rgba(0, 0, 0, 0.8);
+     
+    }
+    .menudis{
+        display: block;
+    }
+    .menudisnon{
+        display: none;
+    }
+    .navul{
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;  
+        /* border: 1px solid black; */
+        align-items: flex-start;
+        padding-left: 20px;
+    
+    }
+    .navitem{
+        font-size: 1rem;
+    }
+    .menurow{
+        position: relative;
+        padding-bottom: 30px;
+    }
+    .menucloseicon{
+        display: block;
+        position: absolute;
+        right: -90%;
+        top: 5px;
+         
+    }
+    .menuclose{
+        font-size:1.5rem ;
+        font-weight: 700;
+        color: rgba(0, 0, 0, 0.8);
+        transition: all 0.3 ease-in-out;
+        cursor: pointer;
+    }
+    .menuclose:hover{
+        color: red;
+        transition: all 0.3 ease-in-out;
+    }
+    /* this is the menu toggle class */
+    .menuopen{
+        display: block;
+    }
+    
+
+}

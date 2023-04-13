@@ -1,0 +1,136 @@
+.searchcontainer{
+    width: 100%;
+    height: 45px;
+    position: relative;
+    /* border: 1px solid red; */
+    
+}
+.searchbox{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid blue; */
+    border-radius: 20px;
+    background-color: white;
+    overflow: hidden;
+    padding-left: 10px;
+    box-shadow: -5px -1px 20px -10px rgba(0, 0, 0, 0.5);
+    
+}
+.inputfill{
+    /* padding: 0xp 20px!important; */
+    width:100%;
+    outline: none;
+    border: none;
+}
+.searchicon{
+    height: 100%;
+    /* width: 100%; */
+    padding: 0px 20px;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.searchicon:hover{
+    background-color: brown;
+    transition: all 0.3s ease-in-out;
+}
+/* search suggestion bos */
+.searchsuggestion{
+    position: absolute;
+     padding: 20px;
+    width: 90%;
+    max-height: 400px;
+    overflow: hidden;
+    background: rgba(243,245,246,1);
+    border-radius: 5px;
+    z-index: 999;
+    /* border: 1px solid black; */
+   
+    display: block;
+    /* box-shadow:-5px -1px 20px -10px rgba(0, 0, 0, 0.5);  */
+    /* display: none; */
+}
+.searchsuggestionNon{
+    display: none;
+}
+.searchbarul{
+    /* height: 100vh; */
+    width: 100%;
+}
+.searchli{
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.2);
+}
+.searchlink{
+    display: block;
+    color: rgba(0, 0, 0, 0.9);
+   font-size: 1rem;
+    padding: 5px 10px;
+}
+.searchlink:hover{
+background-color: white;
+color: black;
+}
+
+/* reponsive search bar */
+@media(max-width:992px){
+    .searchcontainer{
+        height: 40px;
+    }
+    .searchbox{
+        border-radius: 20px;
+    }
+    .searchicon{
+        padding: 0px 15px;  
+        font-size: 1rem; 
+        background-color: white!important;
+        color: rgba(0, 0, 0, 0.7);
+        font-weight: 700;
+    }
+    .searchlink{
+        font-size: 0.9rem;
+    }
+}
+@media(max-width:768px){
+    .searchcontainer{
+        height: 40px;
+    }   
+    .searchbox{
+        border-radius: 0px;   
+    }
+    .inputfill{
+        font-size: 0.9rem;
+    }
+    .searchicon{
+        padding: 0px 10px;
+        font-size: 1rem;
+    } 
+    .searchsuggestion{
+        width: 100%;
+        padding: 20px 10px;
+    }
+    .inputfill{
+        font-size: 0.9rem;
+    }
+    .searchlink{
+        font-size: 0.9rem;
+    }
+}
+@media(max-width:556px){
+    .searchcontainer{
+        width: 100%;
+        height: 35px;  
+
+    } 
+    .searchicon{
+        font-size: 1rem;
+        padding: 0px 10px;
+    }  
+}

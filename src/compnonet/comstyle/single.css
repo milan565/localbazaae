@@ -1,0 +1,242 @@
+.singlesection{
+    
+    background-color: rgba(243,245,246,1);
+    /* border-bottom: 1px solid black; */
+}
+.singleproductrow{
+    /* border: 1px solid blue; */
+    margin-bottom: 30px;
+    box-shadow: 1px 5px 20px -5px rgba(0, 0, 0, 0.2);
+    height: 80vh;
+    background-color: white;
+    /* background-color: rgba(243,245,246,1); */
+    /* border: 1px solid red; */
+}
+.singleproductimage{
+    /* border: 1px solid red; */
+    position: relative;
+    height: 100%;
+}
+.singleproductimage::after{
+    content: "";
+    border-right: 2px solid rgba(0, 0, 0, 0.5);
+    top: 0px;
+    right: 0;
+    height: 90%;
+    position: absolute;
+
+}
+.singleproductimagecontainer{
+    width: 100%;
+    height: 60%;
+    background-color: white;
+    box-shadow: -5px 5px 20px -5px rgba(0, 0, 0, 0.2) ;
+    /* border: 1px solid black; */
+}
+
+.singleproductimagecontainer img{
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid green; */
+}
+.imagecarasolebox{
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.imagecarosolrow{
+
+    box-shadow: 10px 5px 20px -5px rgba(0, 0, 0, 0.2) ;
+     height: 70%;
+    width: 100%;
+}
+.singleproductcarouselimage{
+    height: 100%;
+    cursor: pointer;
+    position: relative;
+    /* border: 1px solid blue; */
+}
+.singleproductcarouselimage::after{
+    content: "";
+    position: absolute;
+    border-right: 1px solid rgba(0, 0, 0, 0.5);
+    height: 100%;
+    top: 0;
+    right: 0;
+}
+.singleproductcarouselimage img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.singleproductdetails{
+    /* border: 1px solid blue; */
+}
+.singleproductdiv{
+    padding: 10px 0px;
+}
+.singleproducname{
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.9);
+    letter-spacing: 1px;
+}
+.singleproducttitle{
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.7);
+}
+.singleproductdata{
+    padding-left: 10px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.7);
+}
+.singleproductcartbox{
+    width: 45%;
+    height: 50px;
+   
+}
+.singleproductcal{
+    display: flex;
+    justify-content: space-between;
+}
+.singleproductlink{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    
+}
+.singleproductlink:hover{
+    color: white;
+}
+.addcardlink{
+    background-color: #1362e3;
+    transition: all 0.3s ease-in-out;
+}
+.addcardlink:hover{
+    background-color:#0d4f9c ;
+    transition: all 0.3s ease-in-out;
+}
+.buylink{
+    background-color: red;
+    transition: all 0.3s ease-in-out;
+}
+.buylink:hover{
+    background-color:#960018 ;
+    transition: all 0.3s ease-in-out;
+}
+
+
+/* ********************* responsive css ********************* */
+@media(max-width:992px){
+    .singleproducname{
+        font-size: 1.5rem;
+       
+    }
+    .singleproducttitle{
+        font-size: 1.1rem;
+       
+    }
+    .singleproductdata{
+        padding-left: 10px;
+        font-size: 1.1rem;
+        
+    }
+    .singleproductcartbox{
+        width: 45%;
+        height: 40px;
+       
+    }
+    .singleproductlink{
+        font-size: 1rem;   
+    }
+}
+@media(max-width:768px){
+   .singleproductrow{
+    /* background-color: blue; */
+    height: 60vh;
+   } 
+   .singleproducname{
+    font-size: 1.3rem;
+   
+}
+.singleproducttitle{
+    font-size: 0.9rem;
+   
+}
+.singleproductdata{
+    padding-left: 10px;
+    font-size: 0.9rem;
+    
+}
+.singleproductcartbox{
+    width: 45%;
+    height: 40px;
+   
+}
+.singleproductlink{
+    font-size: 0.8rem;   
+}
+.singleproductdiv{
+    padding: 5px 0px;
+}
+}
+@media(max-width:576px){
+    .singleproductrow{
+        height: 80vh;
+    }
+    .singleproductimage::after{
+        display: none;
+    }
+    .singleproductimage{
+        height: 300px;
+        width: 100%;
+        /* border: 1px solid red; */
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .singleproductimagecontainer{
+     width: 100%; 
+     display: flex;
+     justify-content: center;
+     height: 60%;  
+    }
+    .singleproductimagecontainer img{
+        width: 60%;
+        height: 100%;
+        margin: auto;
+      
+    }
+    .imagecarasolebox{
+        height: 30%;
+    }
+    .imagecarosolrow{
+        height: 100%;
+    }
+    .singleproductcarouselimage img{
+        scale: 0.8;
+    }
+    .singleproductdetails{
+        padding-top: 10px;
+    }
+    .singleproductdiv{
+        padding: 0px 20px;
+    }
+    .singleproductcartbox{
+        width: 40%;
+        height: 40px;
+       
+    }
+ }

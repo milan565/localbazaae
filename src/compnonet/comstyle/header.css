@@ -1,0 +1,218 @@
+.headersection{
+    width: 100%;
+    height: 30px;
+    background-color: #1362e3;
+    color: white;
+    /* border: 2px solid green; */
+}
+/* .topheadericon{
+    border: 1px solid red;
+} */
+.headercontainer{
+    height: 100%;
+}
+.throw{
+    height: 100%;
+}
+.icon{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+}
+.icon:hover{
+    color: white;
+}
+
+.thlink{
+    color: white;
+    
+    padding: 2px 10px 2px 5px;
+    font-size: 0.8rem;
+    font-weight: 300;
+    position: relative;
+    /* padding-bottom: 2px; */
+    
+}
+.thlink:hover{
+    color: white;
+}
+.thlink::after{
+    content: "";
+    position: absolute;
+    border-bottom: 1.5px solid white;
+    left: 0px;
+    bottom: 0;
+    width: 0%;
+    transition:all 0.5s ease-in-out;
+    border-radius: 0.5px;
+}
+.thlink:hover::after{
+    width: 100%;
+    transition:all 0.5s ease-in-out;
+}
+.thrfristlink{
+    position: relative;
+    padding-right: 15px;
+}
+.thrfristlink::after{
+    content: "";
+    border-right: 1px solid white;
+    height: 80%;
+    top: 5px;
+    right: 0px;
+}
+.logout-button{
+    background-color:#1362e3!important;
+    color: white;
+    border: none;  
+}
+
+/* .container{
+    border: 1px solid red;
+
+}
+.row{
+    border: 1px solid black;
+} */
+
+/* ************************midheader section ************************ */
+.midheadersection{
+    width: 100%;
+    height: 70px;
+    background-color: rgba(243,245,246,1);
+}
+.logoarea{
+    height: 100%;
+    /* border: 1px solid black; */
+}
+.logobox{
+    /* border: 1px solid red; */
+    height: 100%;
+}
+.logosection{
+    /* border: 1px solid blue; */
+    padding-left: 20px;
+}
+.logosection h1{
+    font-size: 1.7rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: blue;
+    padding-bottom: 3px;
+   
+}
+.logoicon{
+    /* border: 1px solid red; */
+    position: relative;
+
+}
+.logoicon::after{
+    content: "";
+    border-bottom: 3px solid blue;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    border-radius: 2px;
+}
+.logoupper{
+    font-size: 2.2rem;
+    color: #ff0000;
+    font-style: italic;
+}
+.searchsection{
+    /* border: 2px solid red; */
+}
+.fristaccount{
+    border-right: 1.4px solid  rgba(0, 0, 0, 0.8);
+}
+.accounticon{
+    font-size: 1.4rem;
+    color: rgba(0, 0, 0, 0.8);
+    transition: all 0.3s ease-in-out;
+    z-index: 2;
+  
+}
+.headerlink{
+    position: relative;
+}
+.cartcount{
+    position: absolute;
+    right: -15px;
+    top: -10px;
+    height: 20px;
+    width: 20px;
+    background-color: blue;
+    color: white;
+    font-size: 0.6rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+
+   
+}
+.accounttext{
+    font-size: 0.8rem;
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 400;
+}
+.headerlink:hover .accounticon{
+    color: blue;
+    transition: all 0.3s ease-in-out;
+
+}
+
+/* ****************** menu section ************ */
+.menusection{
+    height: 60px;
+    border-bottom: 1px solid rgba(0,0,255,0.1);
+    background-color: white;
+}
+.navitem{
+    /* padding: 20px 10px; */
+    color: rgba(0, 0, 0, 0.8);
+    letter-spacing: 0.5px;
+    /* border: 1px solid blue; */
+    position: relative;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    font-size: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+.navli{
+    height: 100%;
+    /* border: 1px solid yellow; */
+    display: flex;
+    align-items: center;
+}
+.navitem:hover{
+    /* color: rgba(0, 0, 0, 0.8);  */
+    color: blue;
+    transition: all 0.3s ease-in-out;
+}
+.navitem::after{
+    content: "";
+    position: absolute;
+    border-bottom: 2px solid rgba(0,0,255,0.5);
+    left: 0;
+    bottom: 0;
+    width: 0;
+    transition: all 0.3s ease-in-out;
+}
+.navitem:hover::after{
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+}
+.navul{
+    /* border: 1px solid red; */
+}
+.hambergunmenu{
+    display: none;
+}
+.menucloseicon{
+    display: none;
+}
+

@@ -1,0 +1,120 @@
+.topfooter{
+    width: 100%;
+    /* height: 300px; */
+    background-color: rgba(243,245,246,1);
+     border-top:2px solid rgba(0,0,255,0.1);
+
+}
+.footertitle{
+    font-size: 1.1rem;
+    color: black;
+    font-weight: 700;
+   padding-bottom: 20px;
+}
+.footerpara{
+    font-size: 0.9rem;
+    color: black;
+    letter-spacing: 0.5px;
+   
+     line-height: 20px;
+     text-align: justify;
+}
+.footerli{
+    line-height: 30px;
+}
+
+.footerlink{
+    text-decoration: none;
+    color: rgba(0,0,0,0.9);
+    font-size: 1rem;
+}
+.footerspan{
+    font-size: 1rem;
+    color: black;
+    font-weight: 700;
+}
+.footerContactIcon{
+    color: blue;
+}
+/* ********************* lower footer section started ************** */
+.bottomfooter{
+    
+    width: 100%;
+    background-color: #1362e3;
+    height: 70px;
+    border: 1px solid #1362e3 ;
+}
+.footerLowerLink{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    overflow: hidden;
+    box-shadow: 1px 1px 5px 5px rgba(0,0,0,0.4);
+    transition: all ease-in-out 0.6s;
+}
+.fotericon{
+    font-size: 1.2rem;
+    
+}
+.facebook{
+    color: blue;
+    transition: all ease-in-out 0.6s;
+}
+.footerLowerLink:hover{
+    box-shadow: 1px 1px 5px 5px rgba(255,255,255,0.4);  
+    background-color: #1362e3;
+    color: white;
+}
+
+.instragram{
+    color: black;
+    transition: all ease-in-out 0.6s;
+}
+.youtube{
+    color: red;
+    transition: all ease-in-out 0.6s;
+}
+.footerLowerLink:hover .facebook{
+    color: white;
+    transition: all ease-in-out 0.6s;
+}
+.footerLowerLink:hover .instragram{
+    color: white;
+    transition: all ease-in-out 0.6s;
+}
+.footerLowerLink:hover .youtube{
+    color: white;
+    transition: all ease-in-out 0.6s;
+}
+/* *************** footer section responsive ***********/
+@media(max-width:768px){
+    .footertitle{
+        font-size: 1rem;
+    } 
+    .footerpara{
+        font-size: 0.8rem; 
+    }
+    .footerli{
+        line-height: 25px;
+    }
+    .footerlink{
+   
+        font-size: 0.9rem;
+    }
+    .footerspan{
+        font-size: 0.9rem;
+        
+    }
+    .footerLowerLink{
+        height: 30px;
+        width: 30px;  
+    }
+    .fotericon{
+        font-size: 1rem;
+        
+    } 
+} 
